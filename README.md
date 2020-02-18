@@ -74,7 +74,7 @@ No output.
 
 ## Authors
 
-Module managed by [Kevan Lucchini](https://github.com/Kevan Lucchini)
+Module managed by [Kevan Lucchini](https://github.com/KevanLucchini)
 
 ## Credits
 
