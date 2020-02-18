@@ -2,7 +2,7 @@
 
 ## Features
 
-This module...
+This module instantiates two AWS EC2 instances and makes them highly available. This is done through Terraform, Ansible, and Pacemaker.
 
 ## Terraform versions
 
@@ -16,10 +16,19 @@ module "this" {
 
 }
 ```
+## Testing
+This module has been packaged with terratest tests
+
+To run them:
+
+1. Install Go 
+2. Run `go mod init` 
+3. Run `go mod tidy` from the root of this repo 
+4. Run `make test` again from root 
 
 ## Examples
 
-- [defaults](https://github.com/Kevan Lucchini/terraform-icon-aws-prep-ha/tree/master/examples/defaults)
+- [defaults](https://github.com/KevanLucchini/terraform-icon-aws-prep-ha/tree/master/examples/defaults)
 
 ## Known issues
 No issue is creating limit on this module.
@@ -65,7 +74,7 @@ No output.
 
 ## Authors
 
-Module managed by [Kevan Lucchini](github.com/Kevan Lucchini)
+Module managed by [Kevan Lucchini](https://github.com/Kevan Lucchini)
 
 ## Credits
 
