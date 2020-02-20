@@ -1,0 +1,6 @@
+---
+# vars file for ha-cluster-pacemaker
+pacemaker_packages:
+    - pcs
+    - pacemaker
+    - crmsh

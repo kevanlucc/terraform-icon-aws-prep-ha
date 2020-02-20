@@ -1,0 +1,9 @@
+---
+# - hosts: all
+#   become: true
+#   roles:
+#     - ha-cluster-pacemaker
+- hosts: all
+  become: true
+  roles:
+     - { role: 'ondrejhome.ha-cluster-pacemaker', cluster_name: 'test-cluster' }
