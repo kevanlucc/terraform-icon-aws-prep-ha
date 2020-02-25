@@ -4,6 +4,9 @@
 
 This module instantiates two AWS EC2 instances and makes them highly available. This is done through Terraform, Ansible, and Pacemaker. Testing has been added for Terraform using Terratest, written in Go. The goal of this project is to make this module production ready and be implemented on [ICON Blockchain Project](https://icon.foundation).
 
+## Architecture Diagram
+[!Diagram1](https://github.com/kevanlucc/terraform-icon-aws-prep-ha/blob/master/terraform-icon-aws-prep-ha/images/BlankDiagram.png)
+[!Diagram2](https://github.com/kevanlucc/terraform-icon-aws-prep-ha/blob/master/terraform-icon-aws-prep-ha/images/BlankDiagram2.png)
 ## Terraform versions
 
 For Terraform v0.12.0+
