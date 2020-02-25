@@ -89,4 +89,4 @@ module "defaults" {
   security_group_id_1 = aws_security_group.this.id
   subnet_id_1 = module.vpc.public_subnets[0]
   subnet_id_2 = module.vpc.public_subnets[1]
-}
+} 
