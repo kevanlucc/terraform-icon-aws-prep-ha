@@ -24,7 +24,7 @@ module "label" {
 //}
 
 module "ec2_a" {
-  source = "github.com/insight-infrastructure/terraform-aws-ec2-basic.git?ref=master"
+  source = "github.com/kevanlucc/terraform-aws-ec2-basic.git?ref=centos"
 
   name = var.node_name
 
@@ -52,7 +52,7 @@ resource "aws_eip_association" "ec2_a" {
 }
 
 module "ec2_b" {
-  source = "github.com/insight-infrastructure/terraform-aws-ec2-basic.git?ref=master"
+  source = "github.com/kevanlucc/terraform-aws-ec2-basic.git?ref=centos"
 
   name = var.node_name
 
@@ -82,15 +82,15 @@ module "ansible" {
   inventory_template_vars = {
     ec2_a_ip   = module.ec2_a.public_ip
     ec2_a_vars = <<-EOT
-    stuff = "things"
+    
 EOT
     ec2_b_ip   = module.ec2_b.public_ip
     ec2_b_vars = <<-EOT
-    stuff = "things"
+
 EOT
   }
 
   playbook_file_path = "${path.module}/ansible/playbook.yml"
-  user               = "ubuntu"
+  user               = "centos"
   private_key_path   = var.private_key_path
 }
